@@ -17,6 +17,8 @@ let eta = parseInt(prompt('Quanti anni hai?').trim());
 
 if (isNaN(km_utente) || isNaN(eta)){
     alert('è necessario inserire un numero in entrambi i campi') 
+} else if (km_utente === 0 || eta === 0) {
+    alert('il valore del campo non può essere 0')
 } else{
 if (eta < 18) {
     let sconto = ((biglietto_intero / 5));
@@ -30,10 +32,3 @@ if (eta < 18) {
     document.getElementById("prezzo_biglietto").innerHTML = `${biglietto_intero.toFixed(2)} €`;
 }
 }
-
-
-
-
-
-
-
