@@ -21,16 +21,13 @@ if (isNaN(km_utente) || isNaN(eta)){
 if (eta < 18) {
     let sconto = ((biglietto_intero / 5));
     let biglietto_scontato = (biglietto_intero - sconto);
-    let tot= biglietto_scontato.toFixed(2);
-    document.getElementById("prezzo_biglietto").innerHTML = `${tot} €`;
+    document.getElementById("prezzo_biglietto").innerHTML = `${biglietto_scontato.toFixed(2)} €`;
 } else if (eta >= 65) {
     let sconto = (((biglietto_intero / 10) * 4));
     let biglietto_scontato = (biglietto_intero - sconto);
-    let tot = biglietto_scontato.toFixed(2);
-    document.getElementById("prezzo_biglietto").innerHTML = `${tot} €`;
+    document.getElementById("prezzo_biglietto").innerHTML = `${biglietto_scontato.toFixed(2)} €`;
 } else {
-    let tot = biglietto_intero.toFixed(2);
-    document.getElementById("prezzo_biglietto").innerHTML = `${tot} €`;
+    document.getElementById("prezzo_biglietto").innerHTML = `${biglietto_intero.toFixed(2)} €`;
 }
 }
 
