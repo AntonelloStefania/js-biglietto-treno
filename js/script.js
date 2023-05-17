@@ -12,10 +12,8 @@ let tot = biglietto_intero.toFixed(2);
 
 let eta = parseInt(prompt('Quanti anni hai?').trim());
 if (eta < 18) {
-    let biglietto_scontato = (biglietto_intero - sconto);
     document.getElementById("prezzo_biglietto").innerHTML = `${tot_min} €`;
 } else if (eta >= 65) {
-    let biglietto_scontato_old = (biglietto_intero - sconto_old);
     document.getElementById("prezzo_biglietto").innerHTML = `${tot_old} €`;
 } else {
     document.getElementById("prezzo_biglietto").innerHTML = `${tot} €`;
